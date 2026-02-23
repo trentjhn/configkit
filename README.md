@@ -95,6 +95,12 @@ The only server call is to the Anthropic Messages API for config generation.
 
 ## `>_` GETTING STARTED
 
+**Using ConfigKit** — no account, no setup, no API key. Just open the app and press START.
+
+---
+
+**Self-hosting your own instance:**
+
 **1. Clone & install**
 ```bash
 git clone https://github.com/trentjhn/configkit.git
@@ -102,19 +108,16 @@ cd configkit
 npm install
 ```
 
-**2. Add your Anthropic API key**
+**2. Add an Anthropic API key** *(operator only — not exposed to end users)*
 ```bash
-# Create a .env file in the project root
 echo "VITE_ANTHROPIC_API_KEY=sk-ant-..." > .env
 ```
-> Get a key at [console.anthropic.com](https://console.anthropic.com). ConfigKit uses `claude-haiku-4-5` — costs fractions of a cent per generation.
+> Get a key at [console.anthropic.com](https://console.anthropic.com). Uses `claude-haiku-4-5` — fractions of a cent per generation.
 
 **3. Run**
 ```bash
 npm run dev
 ```
-
-Open `http://localhost:5173` and press START.
 
 ---
 
